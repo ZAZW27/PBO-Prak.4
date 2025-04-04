@@ -3,17 +3,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int[][] A = new int[2][2], B = new int[2][2], C = new int[2][2];
+        int[][] X = new int[2][2], Y = new int[2][2], result = new int[2][2];
 
         System.out.println("Operasi yang dipilih:\nPekralian[1]\nPengurangan[2]\n===========Pilihan");
         String operaotor = input.nextLine();
 
         switch(operaotor){
             case "1":
-                Perkalian(input, A, B, C);
+                Perkalian(input, X, Y, result);
                 break;
             case "2":
-                Pengurangan(input, A, B, C);
+                Pengurangan(input, X, Y, result);
                 break;
             default:
                 System.out.println("Pilihan tidak sesuai coba lagi!");
